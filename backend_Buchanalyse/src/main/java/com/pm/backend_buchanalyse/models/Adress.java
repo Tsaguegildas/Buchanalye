@@ -11,8 +11,8 @@ import java.time.LocalDateTime;
 @Data
 public class Adress {
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private String id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
     @Column (nullable = false)
     private String land;
     @Column(nullable = false)
