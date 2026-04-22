@@ -1,12 +1,7 @@
 package com.pm.backend_buchanalyse.dto;
 
 import com.pm.backend_buchanalyse.enums.UserRole;
-import jakarta.persistence.Column;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
 import lombok.Data;
-import org.hibernate.annotations.CreationTimestamp;
-import org.springframework.data.annotation.LastModifiedDate;
 
 import java.time.LocalDateTime;
 @Data
@@ -19,4 +14,16 @@ public class UserResponse {
     private UserRole userRole= UserRole.USER;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
+
+    @Data
+    public static class AdressResponse {
+        private int Id;
+        private String land;
+        private String stadt;
+        private int postleizahl;
+        private String hausnummer;
+        private LocalDateTime createdAt;
+        private LocalDateTime updateAt;
+
+    }
 }
