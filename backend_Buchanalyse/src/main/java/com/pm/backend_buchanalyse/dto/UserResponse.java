@@ -15,15 +15,4 @@ public class UserResponse {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
-    @Data
-    public static class AdressResponse {
-        private int Id;
-        private String land;
-        private String stadt;
-        private int postleizahl;
-        private String hausnummer;
-        private LocalDateTime createdAt;
-        private LocalDateTime updateAt;
-
-    }
 }
