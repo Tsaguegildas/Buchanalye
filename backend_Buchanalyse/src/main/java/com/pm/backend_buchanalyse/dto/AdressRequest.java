@@ -1,4 +1,4 @@
-package com.pm.backend_buchanalyse.models;
+package com.pm.backend_buchanalyse.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
