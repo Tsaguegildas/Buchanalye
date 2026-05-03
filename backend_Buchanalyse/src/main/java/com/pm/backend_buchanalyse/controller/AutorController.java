@@ -2,9 +2,6 @@ package com.pm.backend_buchanalyse.controller;
 
 import com.pm.backend_buchanalyse.models.Autor;
 import com.pm.backend_buchanalyse.service.AutorServise;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
