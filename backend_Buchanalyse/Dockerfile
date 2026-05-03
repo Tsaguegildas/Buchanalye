@@ -2,7 +2,7 @@ FROM eclipse-temurin:17-jdk
 
 WORKDIR /app
 
-COPY . .
+COPY  backend_Buchanalyse .
 
 RUN chmod +x mvnw
 RUN ./mvnw clean package -DskipTests
