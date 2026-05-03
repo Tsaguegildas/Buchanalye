@@ -2,14 +2,8 @@ package com.pm.backend_buchanalyse.controller;
 
 import com.pm.backend_buchanalyse.models.Autor;
 import com.pm.backend_buchanalyse.service.AutorServise;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -30,6 +24,10 @@ public class AutorController {
     @PostMapping(consumes = APPLICATION_JSON_VALUE)
     public ResponseEntity<Autor> addAutor( Autor autor){
         return  ResponseEntity.ok(autorServise.addAutor(autor));
+    }
+    @PutMapping(consumes = APPLICATION_JSON_VALUE)
+    public ResponseEntity<Autor> updateAutor( Autor autor){
+        return  ResponseEntity.ok(autorServise.updateAutor(autor));
     }
 }
 

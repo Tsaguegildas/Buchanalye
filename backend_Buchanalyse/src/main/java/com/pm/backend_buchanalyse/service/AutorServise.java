@@ -18,4 +18,8 @@ public class AutorServise {
     public Autor addAutor(Autor autor) {
         return this.autorRepository.save(autor);
     }
+
+    public Autor updateAutor(Autor autor) {
+        return this.autorRepository.save(autor);
+    }
 }
